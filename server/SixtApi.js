@@ -1,12 +1,14 @@
 import axios from 'axios';
-import config from './config';
+import { config } from './config';
 
-export const fetchData = async () => {
+const fetchData = async () => {
   try {
-    const offers = await axios.get(config.offersUrl);
-    return offers;
+    const result = await axios.get(config.sixtUrl);
+    return result.data.offers;
   } catch (e) {
     console.log('Error calling SixtAPI');
     return {};
   }
 }
+
+export { fetchData };

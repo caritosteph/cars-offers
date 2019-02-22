@@ -1,6 +1,6 @@
 import express from 'express';
-import config from './config';
-import SixtApi from './SixtApi';
+import { config } from './config';
+import { fetchData } from './SixtApi';
 
 const app = express();
 const port = process.env.PORT || config.PORT
@@ -13,6 +13,6 @@ app.use((req, res, next) => {
 });
 
 app.get('/offers', (req, res) => {
-  SixtApi.fetchData()
+  fetchData()
   .then(offers => res.send(offers))
 });
