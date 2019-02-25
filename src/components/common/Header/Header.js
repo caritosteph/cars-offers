@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const HeaderBar = styled.header`
 padding: 0.625em 0 0.625em 0;
-background-color: ${props => props.primaryColor};
+background-color: #7f0000;
 width: 100%;
 `
 const StyledLink = styled(Link)`
