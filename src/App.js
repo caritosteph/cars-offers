@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
+import Dashboard from './components/Dashboard';
 import { Provider } from 'react-redux';
 import styled from 'styled-components';
 import store from './config/store';
@@ -16,6 +17,7 @@ class App extends Component {
       <Provider store={store}>
         <View>
           <Header />
+          <Dashboard />
           <Footer />
         </View>
       </Provider>
