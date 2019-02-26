@@ -33,7 +33,7 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "propxy": "https//localhost:3001/",
+  "proxy": "http://localhost:3001/",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",

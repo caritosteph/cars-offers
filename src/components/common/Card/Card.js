@@ -5,17 +5,17 @@ import styled from 'styled-components';
 const CardItem = styled.div`
   flex: 1 0;
   box-sizing: border-box;
-  padding: 0.625em;
   margin: 0.3125em;
   background-color: #fff;
   color: #171e42;
+  height: 350px;
+  width: 350px;
 `;
 
 CardItem.displayName = 'CardItem';
 
 const CardHeader = styled.div`
   display: flex;
-  padding: 1em;
   justify-content: center;
 `;
 
@@ -31,14 +31,11 @@ Title.displayName = 'Title';
 
 const CardContent = styled.div`
   display: flex;
-  padding-top: 0.625em;
-  padding-bottom: 0.625em;
   justify-content: center;
 `;
 
 const CardFooter = styled.div`
   display: flex;
-  padding: 0.5em;
   justify-content: center;
 `;
 
@@ -59,7 +56,7 @@ const Card = ({ name, image, price }) => {
         <img src={image} alt={name} />
       </CardContent>
       <CardFooter>
-        <Content>{price}</Content>
+        <Content>Price: {price}</Content>
       </CardFooter>
     </CardItem>
   );
@@ -68,7 +65,7 @@ const Card = ({ name, image, price }) => {
 Card.propTypes = {
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired
+  price: PropTypes.number.isRequired
 };
 
 export default Card;

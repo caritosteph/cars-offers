@@ -12,7 +12,7 @@ const Offer = ({ offerInfo }) => {
 }
 
 Offer.propTypes = {
-  carInfo: PropTypes.object.isRequired
+  offerInfo: PropTypes.object.isRequired
 };
 
 export default Offer;
