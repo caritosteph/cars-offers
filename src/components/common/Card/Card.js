@@ -10,9 +10,22 @@ const CardItem = styled.div`
   color: #171e42;
   height: 350px;
   width: 350px;
+
+  @media (min-width: 430px) {
+    max-width: calc(50% - 0.625em);
+  }
+  @media (min-width: 630px) {
+      max-width: calc(50% - 0.625em);
+  }
+  @media (min-width: 840px) {
+      max-width: calc(25% - 0.625em);
+  }
 `;
 
 CardItem.displayName = 'CardItem';
+
+const Img = styled.img`
+`;
 
 const CardHeader = styled.div`
   display: flex;
@@ -53,7 +66,7 @@ const Card = ({ name, image, price }) => {
         <Title>{name}</Title>
       </CardHeader>
       <CardContent>
-        <img src={image} alt={name} />
+        <Img src={image} alt={name} />
       </CardContent>
       <CardFooter>
         <Content>Price: {price}</Content>
