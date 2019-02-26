@@ -1,7 +1,7 @@
 # Installation process
 
 `
-git clone https://github.com/caritosteph/Sixt
+git clone https://github.com/caritosteph/Sixt.git
 `
 
 ## Install dependencies
