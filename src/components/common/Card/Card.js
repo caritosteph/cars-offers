@@ -10,12 +10,13 @@ const CardItem = styled.div`
   color: #171e42;
   height: 350px;
   width: 350px;
-
+  
   @media (min-width: 430px) {
     max-width: calc(50% - 0.625em);
   }
+
   @media (min-width: 630px) {
-      max-width: calc(50% - 0.625em);
+      max-width: calc(40% - 0.625em);
   }
   @media (min-width: 840px) {
       max-width: calc(25% - 0.625em);
@@ -25,6 +26,22 @@ const CardItem = styled.div`
 CardItem.displayName = 'CardItem';
 
 const Img = styled.img`
+  @media (min-width: 430px) {
+    width: 180px;
+  }
+  @media (min-width: 630px) {
+    width: 200px;
+  }
+  @media (min-width: 840px) {
+    width: 200px;
+  }
+  @media (min-width: 1040px) {
+    width: 250px;
+  }
+  @media (min-width: 1250px) {
+    width: 300px;
+  }
+
 `;
 
 const CardHeader = styled.div`
@@ -43,7 +60,7 @@ const Title = styled.p`
 Title.displayName = 'Title';
 
 const CardContent = styled.div`
-  display: flex;
+  display: bloc;
   justify-content: center;
 `;
 
