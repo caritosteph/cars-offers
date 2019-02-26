@@ -10,7 +10,7 @@ const CardItem = styled.div`
   color: #171e42;
   height: 350px;
   width: 350px;
-  
+
   @media (min-width: 430px) {
     max-width: calc(50% - 0.625em);
   }
@@ -43,6 +43,7 @@ const Img = styled.img`
   }
 
 `;
+Img.displayName = 'Img';
 
 const CardHeader = styled.div`
   display: flex;
